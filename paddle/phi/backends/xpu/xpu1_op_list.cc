@@ -161,6 +161,7 @@ XPUOpMap& get_kl1_ops() {
                      phi::DataType::INT32,
                      phi::DataType::FLOAT32})},
       {"group_norm_silu_xpu", XPUKernelSet({phi::DataType::FLOAT32})},
+      {"layer_norm_relu_xpu", XPUKernelSet({phi::DataType::FLOAT32})},
       {"hard_switch_grad", XPUKernelSet({phi::DataType::FLOAT32})},
       {"hard_switch", XPUKernelSet({phi::DataType::FLOAT32})},
       {"index_select",
